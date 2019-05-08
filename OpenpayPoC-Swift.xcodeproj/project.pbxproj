@@ -12,7 +12,28 @@
 		92ECC5D4228301B90004AF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECC5D2228301B90004AF7C /* Main.storyboard */; };
 		92ECC5D6228301BA0004AF7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92ECC5D5228301BA0004AF7C /* Assets.xcassets */; };
 		92ECC5D9228301BA0004AF7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92ECC5D7228301BA0004AF7C /* LaunchScreen.storyboard */; };
+		92ECC5E5228302D20004AF7C /* Openpay.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92ECC5E1228302D20004AF7C /* Openpay.h */; };
+		92ECC5E6228302D20004AF7C /* OPCard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92ECC5E2228302D20004AF7C /* OPCard.h */; };
+		92ECC5E7228302D20004AF7C /* OPToken.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92ECC5E3228302D20004AF7C /* OPToken.h */; };
+		92ECC5E8228302D20004AF7C /* OPAddress.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 92ECC5E4228302D20004AF7C /* OPAddress.h */; };
+		92ECC5EB228302F10004AF7C /* Openpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92ECC5EA228302F10004AF7C /* Openpay.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92ECC5E0228302A50004AF7C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				92ECC5E5228302D20004AF7C /* Openpay.h in CopyFiles */,
+				92ECC5E6228302D20004AF7C /* OPCard.h in CopyFiles */,
+				92ECC5E7228302D20004AF7C /* OPToken.h in CopyFiles */,
+				92ECC5E8228302D20004AF7C /* OPAddress.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		92ECC5CB228301B90004AF7C /* OpenpayPoC-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenpayPoC-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +43,12 @@
 		92ECC5D5228301BA0004AF7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92ECC5D8228301BA0004AF7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92ECC5DA228301BA0004AF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92ECC5E1228302D20004AF7C /* Openpay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Openpay.h; path = "OpenpaySDK-v2.0.1/include/Openpay.h"; sourceTree = "<group>"; };
+		92ECC5E2228302D20004AF7C /* OPCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OPCard.h; path = "OpenpaySDK-v2.0.1/include/OPCard.h"; sourceTree = "<group>"; };
+		92ECC5E3228302D20004AF7C /* OPToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OPToken.h; path = "OpenpaySDK-v2.0.1/include/OPToken.h"; sourceTree = "<group>"; };
+		92ECC5E4228302D20004AF7C /* OPAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OPAddress.h; path = "OpenpaySDK-v2.0.1/include/OPAddress.h"; sourceTree = "<group>"; };
+		92ECC5EA228302F10004AF7C /* Openpay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Openpay.a; path = "OpenpaySDK-v2.0.1/Openpay.a"; sourceTree = "<group>"; };
+		92ECC5EE228303610004AF7C /* OpenpayPoC-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenpayPoC-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92ECC5EB228302F10004AF7C /* Openpay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +68,7 @@
 			children = (
 				92ECC5CD228301B90004AF7C /* OpenpayPoC-Swift */,
 				92ECC5CC228301B90004AF7C /* Products */,
+				92ECC5E9228302F00004AF7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +89,29 @@
 				92ECC5D5228301BA0004AF7C /* Assets.xcassets */,
 				92ECC5D7228301BA0004AF7C /* LaunchScreen.storyboard */,
 				92ECC5DA228301BA0004AF7C /* Info.plist */,
+				92ECC5EE228303610004AF7C /* OpenpayPoC-Swift-Bridging-Header.h */,
 			);
 			path = "OpenpayPoC-Swift";
+			sourceTree = "<group>";
+		};
+		92ECC5E9228302F00004AF7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92ECC5ED2283030C0004AF7C /* Openpay */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92ECC5ED2283030C0004AF7C /* Openpay */ = {
+			isa = PBXGroup;
+			children = (
+				92ECC5E4228302D20004AF7C /* OPAddress.h */,
+				92ECC5E2228302D20004AF7C /* OPCard.h */,
+				92ECC5E1228302D20004AF7C /* Openpay.h */,
+				92ECC5E3228302D20004AF7C /* OPToken.h */,
+				92ECC5EA228302F10004AF7C /* Openpay.a */,
+			);
+			name = Openpay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +124,7 @@
 				92ECC5C7228301B90004AF7C /* Sources */,
 				92ECC5C8228301B90004AF7C /* Frameworks */,
 				92ECC5C9228301B90004AF7C /* Resources */,
+				92ECC5E0228302A50004AF7C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -96,6 +147,7 @@
 				TargetAttributes = {
 					92ECC5CA228301B90004AF7C = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -282,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RV42WS6MKU;
 				INFOPLIST_FILE = "OpenpayPoC-Swift/Info.plist";
@@ -289,8 +342,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenpaySDK-v2.0.1",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.skylabs.OpenpayPoC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenpayPoC-Swift/OpenpayPoC-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RV42WS6MKU;
 				INFOPLIST_FILE = "OpenpayPoC-Swift/Info.plist";
@@ -307,8 +367,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenpaySDK-v2.0.1",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mx.skylabs.OpenpayPoC-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenpayPoC-Swift/OpenpayPoC-Swift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
